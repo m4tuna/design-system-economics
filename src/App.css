@@ -159,3 +159,18 @@ tr:nth-child(even) {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .pickerContainer {
+    justify-content: center;
+  }
+  .fancy-number-picker {
+    text-align: center;
+  }
+  .input-group {
+    display: block;
+  }
+}
