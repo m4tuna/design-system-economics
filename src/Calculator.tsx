@@ -24,11 +24,13 @@ const SavingsCalculator = () => {
   return (
     <div className='container'>
       <h1>Design System Savings Calculator</h1>
-      <FancyNumberPicker label="Production Time (hours):" value={productionTime} onChange={setProductionTime} />
-      <FancyNumberPicker label="Support Costs (hours per year):" value={supportCosts} onChange={setSupportCosts} />
-      <FancyNumberPicker label="Component Lifetime (years):" value={componentLifetime} onChange={setComponentLifetime} />
-      <FancyNumberPicker label="Integration Costs (hours):" value={integrationCosts} onChange={setIntegrationCosts} />
-      <FancyNumberPicker label="Amount of Projects:" value={amountOfProjects} onChange={setAmountOfProjects} />
+      <div className='pickerContainer'>
+        <FancyNumberPicker label="Production Time (hours):" value={productionTime} onChange={setProductionTime} />
+        <FancyNumberPicker label="Support Costs (hours/year):" value={supportCosts} onChange={setSupportCosts} />
+        <FancyNumberPicker label="Component Lifetime (years):" value={componentLifetime} onChange={setComponentLifetime} />
+        <FancyNumberPicker label="Integration Costs (hours):" value={integrationCosts} onChange={setIntegrationCosts} />
+        <FancyNumberPicker label="Amount of Projects:" value={amountOfProjects} onChange={setAmountOfProjects} />
+      </div>
       <div className="results">
         <h2>Results</h2>
         <table>
