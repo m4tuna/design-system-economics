@@ -10,13 +10,14 @@ const SavingsCalculator = () => {
   const [componentLifetime, setComponentLifetime] = useState(3);
   const [integrationCosts, setIntegrationCosts] = useState(2);
   const [amountOfProjects, setAmountOfProjects] = useState(5);
+  const [numberOfComponents, setNumberOfComponents] = useState(1);
 
   const calculateWithoutDS = () => {
-    return (productionTime + (supportCosts * componentLifetime)) * amountOfProjects;
+    return (productionTime + (supportCosts * componentLifetime)) * amountOfProjects * numberOfComponents;
   };
 
   const calculateWithDS = () => {
-    return (integrationCosts * amountOfProjects);
+    return (integrationCosts * amountOfProjects) * numberOfComponents;
   };
 
   const withoutDS = calculateWithoutDS();
@@ -36,6 +37,7 @@ const SavingsCalculator = () => {
         <FancyNumberPicker label="Component Lifetime (years)" value={componentLifetime} onChange={setComponentLifetime} />
         <FancyNumberPicker label="Integration Costs (hours)" value={integrationCosts} onChange={setIntegrationCosts} />
         <FancyNumberPicker label="Amount of Projects" value={amountOfProjects} onChange={setAmountOfProjects} />
+        <FancyNumberPicker label="Number of Components" value={numberOfComponents} onChange={setNumberOfComponents} />
       </div>
       <div className="results">
         <h2>Results</h2>
@@ -63,12 +65,13 @@ const SavingsCalculator = () => {
         </table>
       </div>
       <div className="explanation">
-        <h2>Explanation of Metrics</h2>
+        <h2>Legend</h2>
         <p><strong>Production Time (h):</strong> The time required to produce the component.</p>
         <p><strong>Support Costs (h per year):</strong> The time required for ongoing support and maintenance of the component each year.</p>
         <p><strong>Component Lifetime (years):</strong> The expected lifetime of the component, during which it requires support.</p>
         <p><strong>Integration Costs (h):</strong> The time required to integrate the component.</p>
         <p><strong>Amount of Projects:</strong> The number of projects that will use the component.</p>
+        <p><strong>Number of Components:</strong> The number of components that you will implement across your projects.</p>
       </div>
     </div>
   );

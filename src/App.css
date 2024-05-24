@@ -80,11 +80,15 @@ tr:nth-child(even) {
 .explanation {
   margin-top: 30px;
   text-align: left;
+  padding: 10px 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #0ff;
 }
 
 .explanation p {
   font-size: 12px;
-  color: #b0bec5;
+  color: #fff;
   margin: 10px 0;
 }
 
@@ -208,11 +212,6 @@ tr:nth-child(even) {
   gap: 10px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.pickerContainer > :last-child {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .home {
@@ -473,6 +472,15 @@ tr:nth-child(even) {
 
 
 @media (max-width: 600px) {
+  .fancyTitle {
+    font-size: 42px;
+  }
+  .fancy-number-picker label {
+    font-size: 16px;
+  }
+  .input-group input {
+    max-width: 150px;
+  }
   .container {
     width: 90%;
   }
