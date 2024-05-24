@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react
 import './App.css';
 import { FiHome, FiMenu, FiX } from 'react-icons/fi';
 import { FaAirbnb, FaAtlassian, FaCalculator, FaChartPie, FaLightbulb, FaQuoteLeft, FaQuoteRight, FaShopify } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
 import SavingsCalculator from './Calculator';
 import { useState } from 'react';
 import { CostSavingsChart } from './CostSavings';
@@ -63,7 +64,7 @@ function Menu() {
   return (
     <>
     {isOpen ? (
-        <FiX className='menuButton' size={30} onClick={toggleMenu} />
+        <FiX className='menuButton open' size={30} onClick={toggleMenu} />
       ) : (
         <FiMenu className='menuButton' size={30} onClick={toggleMenu} />
       )}
@@ -161,6 +162,9 @@ function StatsPage() {
 
   return (
     <div className='home'>
+      <div className="back">
+        <Link to="/" className="back-button"><IoIosArrowBack size={25} /></Link>
+      </div>
       <h1 className='fancyTitle'>Design System Statistics</h1>
       <p>Learn more about the value of Design Systems over time.</p>
       <CostSavingsChart />

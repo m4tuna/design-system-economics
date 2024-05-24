@@ -139,6 +139,15 @@ tr:nth-child(even) {
   outline: none;
   border-color: #42a5f5;
 }
+
+.back {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+.back a {
+  color: white;
+}
 .footer {
   display: flex;
   justify-content: flex-end;
@@ -213,14 +222,14 @@ tr:nth-child(even) {
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 200px;
   height: 100vh;
   z-index: 999;
   background-color: #11141f;
-  padding: 20px;
+  padding: 30px 20px;
   box-sizing: border-box;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform 0.3s ease-out;
   text-align: left;
 }
@@ -250,6 +259,10 @@ tr:nth-child(even) {
   color: white;
   font-size: 24px;
   cursor: pointer;
+}
+
+.menuButton.open {
+  right: 210px;
 }
 
 .menu nav {

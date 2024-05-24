@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import FancyNumberPicker from './FancyNumberPicker';
+import { Link } from 'react-router-dom';
+import { IoIosArrowBack } from 'react-icons/io';
 
 const SavingsCalculator = () => {
   const [productionTime, setProductionTime] = useState(10);
@@ -23,6 +25,9 @@ const SavingsCalculator = () => {
 
   return (
     <div className='container'>
+      <div className="back">
+        <Link to="/" className="back-button"><IoIosArrowBack size={25} /></Link>
+      </div>
       <h1 className='fancyTitle'>Component Cost Calculator</h1>
       <p>Calculate the value of using a design system by the component.</p>
       <div className='pickerContainer'>
