@@ -140,7 +140,7 @@ function HomePage() {
     <div className="home">
       <h1 className='fancyTitle'>2024 Design System Insights</h1>
       <p>Design systems are more than just efficiency tools for teams; under the hood, they are a driving significant cost savings over time and accelerated delivery when implemented well. </p>
-      <button className='calculator-button'><Link to="/calculator">Calculate your savings</Link></button>
+      <button className='calculator-button'><Link to="/calculator">Calculate value</Link></button>
       <a href='/stats' className='stats-link'>View more statistics &nbsp; <FaArrowTrendUp /></a>
       <div className="home-content">
         <h2>Industry Trends</h2>

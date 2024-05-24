@@ -53,7 +53,7 @@ export function CostSavingsChart() {
   return (
     <div className='chartContainer'>
     <h2>Development Time Comparison</h2>
-    <p>Consistent time savings with a unified design approach.</p>
+    <p>Consistent savings over time.</p>
     <BarChart
       width={500}
       height={300}
@@ -79,7 +79,7 @@ export function CostSavingsChart() {
       <Tooltip />
     </BarChart>
     <h2>Cumulative Cost Savings</h2>
-    <p>See how a design system pays for itself over time.</p>
+    <p>A design system pays for itself over time.</p>
     <AreaChart
       width={500}
       height={400}
@@ -130,7 +130,7 @@ export function CostSavingsChart() {
 
 
     <h2>Task Distribution</h2>
-    <p>Design systems automate repetitive tasks, allowing for more strategic work.</p>
+    <p>Design systems automate repetitive tasks, allowing teams to focus on more strategic tasks and features.</p>
       <ResponsiveContainer width="100%" height={400}>
       <div className='pie-charts-container' style={{ display: 'flex', justifyContent: 'space-around' }}>
         <div>

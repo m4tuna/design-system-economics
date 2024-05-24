@@ -29,7 +29,7 @@ const SavingsCalculator = () => {
       <div className="back">
         <Link to="/" className="back-button"><IoIosArrowBack size={25} /></Link>
       </div>
-      <h1 className='fancyTitle'>Component Cost Calculator</h1>
+      <h1 className='fancyTitle'>Design System Value Calculator</h1>
       <p>Calculate the value of using a design system by the component.</p>
       <div className='pickerContainer'>
         <FancyNumberPicker label="Production Time (hours)" value={productionTime} onChange={setProductionTime} />
@@ -50,11 +50,11 @@ const SavingsCalculator = () => {
           </thead>
           <tbody>
             <tr>
-              <td>Cost without Design System</td>
+              <td>Hours without Design System</td>
               <td>{withoutDS}</td>
             </tr>
             <tr>
-              <td>Cost with Design System</td>
+              <td>Hours with Design System</td>
               <td>{withDS}</td>
             </tr>
             <tr>
