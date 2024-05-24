@@ -141,19 +141,22 @@ function HomePage() {
       <h1 className='fancyTitle'>2024 Design System Insights</h1>
       <p>Design systems are more than just efficiency tools for teams; under the hood, they are a driving significant cost savings over time and accelerated delivery when implemented well. </p>
       <button className='calculator-button'><Link to="/calculator">Calculate your savings</Link></button>
-      <h2>Industry Trends</h2>
-      <div className="stats">
-        {data.map((item, index) => (
-          <div key={index} className="stats-item">
-            <h1 className="icon">{item.icon}</h1>
-            <div className="percentages">
-              <h1 className="percentage">{item.increase1}, {item.increase2} <FaArrowTrendUp /></h1>
+      <a href='/stats' className='stats-link'>View more statistics &nbsp; <FaArrowTrendUp /></a>
+      <div className="home-content">
+        <h2>Industry Trends</h2>
+        <div className="stats">
+          {data.map((item, index) => (
+            <div key={index} className="stats-item">
+              <h1 className="icon">{item.icon}</h1>
+              <div className="percentages">
+                <h1 className="percentage">{item.increase1}, {item.increase2} <FaArrowTrendUp /></h1>
+              </div>
+              <p>{item.text} <span className="percentage-text">{item.increase1}</span> {item.increase1Text} <span className="percentage-text">{item.increase2}</span> {item.increase2Text}</p>
             </div>
-            <p>{item.text} <span className="percentage-text">{item.increase1}</span> {item.increase1Text} <span className="percentage-text">{item.increase2}</span> {item.increase2Text}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+        <TestimonialsSection /> 
       </div>
-      <TestimonialsSection /> 
     </div>
   );
 }

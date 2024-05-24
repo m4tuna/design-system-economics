@@ -363,6 +363,9 @@ tr:nth-child(even) {
   line-height: 20px;
 }
 
+.home-content {
+  margin-top: 80px;
+}
 
 .fancyTitle {
   font-size: 50px;
@@ -381,17 +384,29 @@ tr:nth-child(even) {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  color: #0ff; /* neon text */
+  color: #0ff; 
+}
+
+.home .stats-link {
+  text-decoration: none;
+  color: #ff5733; 
+  display: flex;
+  justify-content: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.home .stats-link:hover {
+  color: #00ff95; 
 }
 
 .stats-item {
   padding: 20px;
-  border: 1px solid #0ff; /* neon border */
+  border: 1px solid #0ff; 
   border-radius: 10px;
 }
 
 .stats-item:hover {
-  box-shadow: 0 0 10px 0 #0ff; /* neon box shadow */
+  box-shadow: 0 0 10px 0 #0ff; 
 }
 
 .stats-item h1 {
