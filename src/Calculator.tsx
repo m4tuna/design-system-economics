@@ -31,11 +31,11 @@ const SavingsCalculator = () => {
       <h1 className='fancyTitle'>Component Cost Calculator</h1>
       <p>Calculate the value of using a design system by the component.</p>
       <div className='pickerContainer'>
-        <FancyNumberPicker label="Production Time (hours):" value={productionTime} onChange={setProductionTime} />
-        <FancyNumberPicker label="Support Costs (hours/year):" value={supportCosts} onChange={setSupportCosts} />
-        <FancyNumberPicker label="Component Lifetime (years):" value={componentLifetime} onChange={setComponentLifetime} />
-        <FancyNumberPicker label="Integration Costs (hours):" value={integrationCosts} onChange={setIntegrationCosts} />
-        <FancyNumberPicker label="Amount of Projects:" value={amountOfProjects} onChange={setAmountOfProjects} />
+        <FancyNumberPicker label="Production Time (hours)" value={productionTime} onChange={setProductionTime} />
+        <FancyNumberPicker label="Support Costs (hours/year)" value={supportCosts} onChange={setSupportCosts} />
+        <FancyNumberPicker label="Component Lifetime (years)" value={componentLifetime} onChange={setComponentLifetime} />
+        <FancyNumberPicker label="Integration Costs (hours)" value={integrationCosts} onChange={setIntegrationCosts} />
+        <FancyNumberPicker label="Amount of Projects" value={amountOfProjects} onChange={setAmountOfProjects} />
       </div>
       <div className="results">
         <h2>Results</h2>

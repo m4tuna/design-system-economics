@@ -63,18 +63,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #b0bec5;
+  border: 1px solid #190e3e;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #263238;
+  background-color: #0f193f;
   color: #ffffff;
 }
 
 tr:nth-child(even) {
-  background-color: #1e272c;
+  background-color: #190e3e;
 }
 
 .explanation {
@@ -102,7 +102,7 @@ tr:nth-child(even) {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #b0bec5;
+  color: #fff;
 }
 
 .input-group {
@@ -110,9 +110,9 @@ tr:nth-child(even) {
 }
 
 .input-group button {
-  background-color: #263238;
+  background-color: #26409f;
   color: #ffffff;
-  border: 1px solid #b0bec5;
+  border: 1px solid #435be7;
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
@@ -120,16 +120,18 @@ tr:nth-child(even) {
 }
 
 .input-group button:hover {
-  background-color: #37474f;
+  background-color: #ff0040;
+  color: #fff;
 }
 
 .input-group input {
-  width: 60px;
+  max-width: 100px;
   padding: 10px;
-  border: 1px solid #b0bec5;
+  border: 1px solid #435be7;
   border-left: none;
   border-right: none;
-  background-color: #263238;
+  border-radius: 0;
+  background-color: #26409f;
   color: #ffffff;
   font-size: 16px;
   text-align: center;
@@ -415,6 +417,7 @@ tr:nth-child(even) {
 }
 
 .stats-item .icon {
+  margin-top: 15px;
   font-size: 75px;
 }
 
