@@ -158,10 +158,10 @@ tr:nth-child(even) {
 
 .footer a {
   position: relative;
-  font-size: 30px;
+  font-size: 42px;
   color: #000;
   background: #08ff95;
-  width: 30px;
+  width: 42px;
   border-radius: 100px;
   display: flex;
   align-items: center;
